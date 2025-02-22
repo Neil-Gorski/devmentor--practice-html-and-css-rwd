@@ -3,7 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  display: grid;
+  grid-template-areas:
+    "p"
+    "t"
+    "v";
+}
 
+@media (min-width: 600px) {
+  body {
+    grid-template-areas:
+      "p t"
+      "v t";
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "p v"
+      "t t";
+  }
+}
 .p,
 .t,
 .v {
@@ -17,6 +39,7 @@
 
 .p {
   border-color: #ffffba;
+  grid-area: p;
 }
 img {
   max-width: 100%;
@@ -25,12 +48,15 @@ img {
 
 iframe {
   width: 100%;
+  min-width: 200px;
   aspect-ratio: 16/8;
 }
 .t {
   border-color: #ffdfba;
+  grid-area: t;
 }
 
 .v {
   border-color: #baffc9;
+  grid-area: v;
 }
