@@ -30,18 +30,14 @@
 
 .navbar__list-item {
   display: flex;
-  border: solid #ffc900 1px;
   width: 100%;
   height: 60px;
   align-items: center;
   justify-content: center;
   margin-top: 5px;
-  border-radius: 5px;
   background-color: #c32c1f;
 }
 
 .navbar__list-link {
-  color: black;
-  text-decoration: none;
   font-size: 2em;
 }
