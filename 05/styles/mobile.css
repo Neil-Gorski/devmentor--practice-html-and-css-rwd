@@ -1,0 +1,17 @@
+.navbar {
+  justify-content: space-between;
+  background-color: brown;
+  align-items: center;
+}
+
+.navbar__spacer {
+  margin-right: auto;
+}
+.navbar__logo {
+  height: 100%;
+}
+.navbar__hamburger {
+  margin: 20px;
+  margin-left: auto;
+  font-size: 2.5em;
+}
