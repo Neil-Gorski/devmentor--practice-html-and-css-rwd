@@ -1,4 +1,10 @@
-#navbar__hamburger-toggle {
+@font-face {
+  font-family: burrito;
+  src: url("../assets/fonts/burrito/burrito.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+#navbar__hamburger--toggle {
   display: none;
 }
 body {
@@ -30,7 +36,6 @@ body {
   min-height: 60px;
   margin-bottom: 5px;
   width: 100vw;
-  overflow: hidden;
 }
 
 .container {
@@ -43,5 +48,8 @@ body {
 
 .navbar {
   display: flex;
-  height: 60px;
+}
+
+.navbar__list-link {
+  font-family: "burrito", "sans-serif";
 }
